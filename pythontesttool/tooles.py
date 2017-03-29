@@ -5,7 +5,7 @@ __author__ = 'zxd'
 
 import wx
 import requests
-
+import json
 
 def load(event):
     # file = open(filename.GetValue())
@@ -13,7 +13,6 @@ def load(event):
     # file.close()
     v= choice(event)
     if v == 0:
-        print 'hello'
         url = str(filename.GetValue())
         r = requests.post(url, headers={'clientversion': '1.0',
                    'clientid':'apitest',
@@ -24,9 +23,14 @@ def load(event):
                    'logintime':'1490342538',
                    'requesttime':'1490342538'}, data={'r':'user/add'})
         print r.text
-        r = contents.GetValue()
+        va = contents.SetValue(r.text)
     elif v == 1:
-        print 'hello'
+        #print 'hello'
+        url=str(filename.GetValue())
+        ployed={"r":"user/list","page":"1","size":"10"}
+        r=requests.get(url, params=ployed)
+        print r.text
+        va = contents.SetValue(r.text)
 
 
 def save(event):
@@ -38,7 +42,6 @@ def save(event):
 def choice(event):
     v=remethod.CurrentSelection
     return v
-
 
 
 

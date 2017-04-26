@@ -1,0 +1,22 @@
+查看运行的包名：
+    realActivity=com.bbk.launcher2/.Launcher
+        realActivity=com.bbk.launcher2/.Launcher
+    realActivity=com.android.mms/.ui.ConversationList
+        realActivity=com.android.mms/.ui.ConversationList
+    realActivity=com.bbk.launcher2/.Launcher
+    realActivity=com.android.mms/.ui.ConversationList
+当前运行的包名：
+      mSurface=Surface(name=com.bbk.launcher2/com.bbk.launcher2.Launcher, identity=21)
+当前的devices是：
+List of devices attached
+HY6SHADAT8QS7TSC	device
+
+查看运行的包名：
+    realActivity=com.bbk.launcher2/.Launcher
+        realActivity=com.bbk.launcher2/.Launcher
+    realActivity=com.android.mms/.ui.ConversationList
+        realActivity=com.android.mms/.ui.ConversationList
+    realActivity=com.bbk.launcher2/.Launcher
+    realActivity=com.android.mms/.ui.ConversationList
+当前运行的包名：
+      mSurface=Surface(name=com.bbk.launcher2/com.bbk.launcher2.Launcher, identity=21)
